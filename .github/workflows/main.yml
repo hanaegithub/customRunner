@@ -1,7 +1,5 @@
 name: Must run on custom runner
 
-on: push
-
 jobs:
   build:
     name: 'Beackend CI Pipeline'
