@@ -1,0 +1,11 @@
+name: Must run on custom runner
+
+on: push
+
+jobs:
+  build:
+    name: 'Beackend CI Pipeline'
+    runs-on: self-hosted
+    steps:
+      - run: echo 'Hello World'
+      - run: echo $HOSTNAME
