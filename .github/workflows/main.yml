@@ -9,3 +9,6 @@ jobs:
 
     name: Beackend CI Pipeline
     runs-on: self-hosted
+    
+    steps:
+      - run: echo 'Hello World'
