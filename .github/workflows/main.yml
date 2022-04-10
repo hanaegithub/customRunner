@@ -1,14 +1,10 @@
-name: Self-Runner
-
-on:
-  release:
-    types: [created, push]
-
+name: Hello-World
+on: [push, workflow_dispatch]
 jobs:
   build:
-
-    name: Beackend CI Pipeline
+    # The type of runner that the job will run on
     runs-on: self-hosted
-    
     steps:
-      - run: echo 'Hello World'
+      - name: Say Hello World
+        run: echo Hello, world!
+
